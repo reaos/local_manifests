@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+  <remote name='reaos' fetch='https://github.com/reaos/' />
+
+  <remove-project name='platform/external/minijail' />
+  <remove-project name='platform/external/selinux' />
+  <remove-project name='platform/frameworks/av' />
+  <remove-project name='platform/frameworks/base' />
+  <remove-project name='platform/frameworks/native' />
+  <remove-project name='platform/packages/modules/Connectivity' />
+  <remove-project name='platform/packages/modules/adb' />
+  <remove-project name='platform/system/core' />
+  <remove-project name='platform/system/libhwbinder' />
+  <remove-project name='platform/system/libvintf' />
+  <remove-project name='platform/system/netd' />
+  <remove-project name='platform/system/vold' />
+
+  <project path='external/minijail' name='android_external_minijail' revision='reaos-15' remote='reaos' groups='reaosp' />
+  <project path='external/selinux' name='android_external_selinux' revision='reaos-15' remote='reaos' groups='reaosp' />
+  <project path='frameworks/av' name='android_frameworks_av' revision='reaos-15' remote='reaos' groups='reaosp' />
+  <project path='frameworks/base' name='android_frameworks_base' revision='reaos-15' remote='reaos' groups='reaosp' />
+  <project path='frameworks/native' name='android_frameworks_native' revision='reaos-15' remote='reaos' groups='reaosp' />
+  <project path='packages/modules/Connectivity' name='android_packages_modules_Connectivity' revision='reaos-15' remote='reaos' groups='reaosp' />
+  <project path='packages/modules/adb' name='android_packages_modules_adb' revision='reaos-15' remote='reaos' groups='reaosp' />
+  <project path='system/core' name='android_system_core' revision='reaos-15' remote='reaos' groups='reaosp' />
+  <project path='system/libhwbinder' name='android_system_libhwbinder' revision='reaos-15' remote='reaos' groups='reaosp' />
+  <project path='system/libvintf' name='android_system_libvintf' revision='reaos-15' remote='reaos' groups='reaosp' />
+  <project path='system/netd' name='android_system_netd' revision='reaos-15' remote='reaos' groups='reaosp' />
+  <project path='system/vold' name='android_system_vold' revision='reaos-15' remote='reaos' groups='reaosp' />
+</manifest>

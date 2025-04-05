@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+  <remote name='reaos' fetch='https://github.com/reaos/' />
+
+  <project path='device/reaos' name='device_reaos' revision='reaos-15' remote='reaos' groups='reaos' />
+  <project path='device/reaos-prebuilts' name='device_reaos-prebuilts' clone-depth='1' revision='reaos-15' remote='reaos' groups='reaos' />
+  <project path='hardware/reaos/c2' name='reaos-c2' revision='reaos-15' remote='reaos' groups='reaos' />
+  <project path='hardware/reaos/omx' name='reaos-omx' revision='reaos-15' remote='reaos' groups='reaos' />
+  <project path='vendor/reaos' name='vendor_reaos' revision='reaos-15' remote='reaos' groups='reaos' />
+</manifest>
