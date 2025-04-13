@@ -2,6 +2,8 @@
 <manifest>
   <remote name='reaos' fetch='https://github.com/reaos/' />
 
+  <remove-project name='platform/build' />
+  <remove-project name='platform/build/soong' />
   <remove-project name='platform/external/minijail' />
   <remove-project name='platform/external/selinux' />
   <remove-project name='platform/frameworks/av' />
@@ -15,6 +17,15 @@
   <remove-project name='platform/system/netd' />
   <remove-project name='platform/system/vold' />
 
+  <project path='build/make' name='android_build_make' revision='reaos-15' remote='reaos' groups='reaosp'>
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path='build/soong' name='android_build_soong' revision='reaos-15' remote='reaos' groups='reaosp' />
   <project path='external/minijail' name='android_external_minijail' revision='reaos-15' remote='reaos' groups='reaosp' />
   <project path='external/selinux' name='android_external_selinux' revision='reaos-15' remote='reaos' groups='reaosp' />
   <project path='frameworks/av' name='android_frameworks_av' revision='reaos-15' remote='reaos' groups='reaosp' />
