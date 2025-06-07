@@ -3,6 +3,7 @@
   <remote name='reaos' fetch='https://github.com/reaos/' />
 
   <remove-project name='platform/build' />
+  <remove-project name='platform/build/bazel' />
   <remove-project name='platform/build/soong' />
   <remove-project name='platform/external/minijail' />
   <remove-project name='platform/external/selinux' />
@@ -25,6 +26,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <project path='build/bazel' name='android_build_bazel' revision='reaos-15' remote='reaos' groups='reaosp' />
   <project path='build/soong' name='android_build_soong' revision='reaos-15' remote='reaos' groups='reaosp' />
   <project path='external/minijail' name='android_external_minijail' revision='reaos-15' remote='reaos' groups='reaosp' />
   <project path='external/selinux' name='android_external_selinux' revision='reaos-15' remote='reaos' groups='reaosp' />
