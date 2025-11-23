@@ -3,7 +3,6 @@
   <remote name='reaos' fetch='https://github.com/reaos/' />
 
   <remove-project name='platform/build' />
-  <remove-project name='platform/build/bazel' />
   <remove-project name='platform/build/soong' />
   <remove-project name='platform/external/minijail' />
   <remove-project name='platform/external/selinux' />
@@ -12,13 +11,15 @@
   <remove-project name='platform/frameworks/native' />
   <remove-project name='platform/packages/modules/Connectivity' />
   <remove-project name='platform/packages/modules/adb' />
+  <remove-project name='platform/system/bpf' />
   <remove-project name='platform/system/core' />
+  <remove-project name='platform/system/hwservicemanager' />
   <remove-project name='platform/system/libhwbinder' />
   <remove-project name='platform/system/libvintf' />
   <remove-project name='platform/system/netd' />
   <remove-project name='platform/system/vold' />
 
-  <project path='build/make' name='android_build_make' revision='reaos-15' remote='reaos' groups='reaosp'>
+  <project path='build/make' name='android_build_make' revision='reaos-16' remote='reaos' groups='reaosp'>
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -26,18 +27,19 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path='build/bazel' name='android_build_bazel' revision='reaos-15' remote='reaos' groups='reaosp' />
-  <project path='build/soong' name='android_build_soong' revision='reaos-15' remote='reaos' groups='reaosp' />
-  <project path='external/minijail' name='android_external_minijail' revision='reaos-15' remote='reaos' groups='reaosp' />
-  <project path='external/selinux' name='android_external_selinux' revision='reaos-15' remote='reaos' groups='reaosp' />
-  <project path='frameworks/av' name='android_frameworks_av' revision='reaos-15' remote='reaos' groups='reaosp' />
-  <project path='frameworks/base' name='android_frameworks_base' revision='reaos-15' remote='reaos' groups='reaosp' />
-  <project path='frameworks/native' name='android_frameworks_native' revision='reaos-15' remote='reaos' groups='reaosp' />
-  <project path='packages/modules/Connectivity' name='android_packages_modules_Connectivity' revision='reaos-15' remote='reaos' groups='reaosp' />
-  <project path='packages/modules/adb' name='android_packages_modules_adb' revision='reaos-15' remote='reaos' groups='reaosp' />
-  <project path='system/core' name='android_system_core' revision='reaos-15' remote='reaos' groups='reaosp' />
-  <project path='system/libhwbinder' name='android_system_libhwbinder' revision='reaos-15' remote='reaos' groups='reaosp' />
-  <project path='system/libvintf' name='android_system_libvintf' revision='reaos-15' remote='reaos' groups='reaosp' />
-  <project path='system/netd' name='android_system_netd' revision='reaos-15' remote='reaos' groups='reaosp' />
-  <project path='system/vold' name='android_system_vold' revision='reaos-15' remote='reaos' groups='reaosp' />
+  <project path='build/soong' name='android_build_soong' revision='reaos-16' remote='reaos' groups='reaosp' />
+  <project path='external/minijail' name='android_external_minijail' revision='reaos-16' remote='reaos' groups='reaosp' />
+  <project path='external/selinux' name='android_external_selinux' revision='reaos-16' remote='reaos' groups='reaosp' />
+  <project path='frameworks/av' name='android_frameworks_av' revision='reaos-16' remote='reaos' groups='reaosp' />
+  <project path='frameworks/base' name='android_frameworks_base' revision='reaos-16' remote='reaos' groups='reaosp' />
+  <project path='frameworks/native' name='android_frameworks_native' revision='reaos-16' remote='reaos' groups='reaosp' />
+  <project path='packages/modules/Connectivity' name='android_packages_modules_Connectivity' revision='reaos-16' remote='reaos' groups='reaosp' />
+  <project path='packages/modules/adb' name='android_packages_modules_adb' revision='reaos-16' remote='reaos' groups='reaosp' />
+  <project path='system/bpf' name='android_system_bpf' revision='reaos-16' remote='reaos' groups='reaosp' />
+  <project path='system/core' name='android_system_core' revision='reaos-16' remote='reaos' groups='reaosp' />
+  <project path='system/hwservicemanager' name='android_system_hwservicemanager' revision='reaos-16' remote='reaos' groups='reaosp' />
+  <project path='system/libhwbinder' name='android_system_libhwbinder' revision='reaos-16' remote='reaos' groups='reaosp' />
+  <project path='system/libvintf' name='android_system_libvintf' revision='reaos-16' remote='reaos' groups='reaosp' />
+  <project path='system/netd' name='android_system_netd' revision='reaos-16' remote='reaos' groups='reaosp' />
+  <project path='system/vold' name='android_system_vold' revision='reaos-16' remote='reaos' groups='reaosp' />
 </manifest>
